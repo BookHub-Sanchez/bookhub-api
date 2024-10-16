@@ -1,5 +1,8 @@
 package com.sanchez.repository;
 
-public interface CategoryRepository {
-    void hello();
+import com.sanchez.model.entity.Category;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface CategoryRepository extends JpaRepository<Category, Integer> {
+
 }
